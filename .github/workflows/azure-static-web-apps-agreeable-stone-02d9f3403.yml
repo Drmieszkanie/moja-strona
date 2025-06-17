@@ -56,3 +56,11 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+  app_location: "/swa-db-connections"  # adjust if needed
+output_location: ""  # this is key — means no build output folder
+- name: Deploy to Azure Static Web Apps
+  uses: Azure/static-web-apps-deploy@v1
+  with:
+    app_location: "/swa-db-connections"
+    output_location: ""  # No build output folder
+
